@@ -1,0 +1,463 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", serif;
+}
+
+/* THE FIRST SECTION */
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgb(0 0 0 / 18%), #1f0e0e40), url(background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ .img {
+    width: 180px;
+}
+
+
+/* this is for right part of navbar */
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 27px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    font-size: 25px;
+    color: rgb(248, 230, 231);
+}
+
+/* ...........transition for left part.......... */
+.nav-links ul li::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #f44336;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+
+/* this is for center content */
+
+.text-box {
+    width: 90%;
+    color: white;
+    position: absolute;
+    top: 56%;
+    left: 53%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.text-box h1 {
+    font-size: 40px;
+}
+
+.text-box h3 {
+    margin: 2px 0px 30px;
+    font-size: 20px;
+    color: white;
+}
+
+.hero-btn {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 14px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+
+.hero-btn:hover {
+    border: 1px solid #ee7971;
+    background: #ee7971;
+    transition: 2s;
+}
+
+nav .imgg {
+    width: 30px;
+    display: none;
+}
+
+
+@media(max-width:700px) {
+    .text-box h1 {
+        font-size: 28px;
+    }
+
+    .nav-links ul li {
+        display: block;
+    }
+
+    .nav-links {
+        position: fixed;
+        background: #c23d349b;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+
+    nav .imgg {
+        display: block;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+        color: rgb(149, 54, 54);
+    }
+
+    .nav-links ul {
+        padding: 20px;
+    }
+}
+
+/* ABOUT SECTION */
+.about {
+    background-color: white;
+    /* Dark background */
+    padding: 180px 20px 10px;
+}
+
+.about-container {
+    display: flex;
+    /* Horizontal alignment */
+    justify-content: space-between;
+    /* Creates space between image and text */
+    align-items: center;
+    /* Centers both vertically */
+    gap: 45px;
+    /* Space between the image and text */
+    max-width: 1200px;
+    /* Constrains the layout width */
+    margin: 0 auto;
+    /* Centers the content */
+}
+
+/* IMAGE STYLING */
+.about-image {
+    flex: 1.5;
+    /* Image takes equal space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    /* Rounded corners */
+    overflow: hidden;
+    /* Ensures rounded corners take effect */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Adds shadow */
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    /* Ensures the image fills the container properly */
+    border-radius: 15px;
+    border : 3px solid #ccc;
+    /* Applies rounded corners to the image */
+}
+
+/* TEXT STYLING */
+.about-text {
+    flex: 1;
+    /* Text takes equal space */
+    color: rgb(160, 53, 53);
+    /* White text for contrast */
+    text-align: justify;
+    /* Aligns text to the left */
+}
+
+.about-text h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    transition: color 0.5s ease, transform 0.5s ease-out;
+}
+
+.about-text .divider {
+    width: 50px;
+    height: 3px;
+    background-color: #f0ad4e;
+    /* Accent color */
+    margin: 10px 0;
+    border: none;
+}
+
+.about-text p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #e88686;
+}
+
+.about-text h1:hover {
+    color: #b2cfcb;
+    /* Change to desired color on hover */
+    transform: scaleY(1.2);
+    /* Slight zoom effect */
+}
+
+.about-image:hover {
+    box-shadow: 0 0 20px 10px rgba(10, 6, 6, 0.914);
+    transition: 0.6s ease-out;
+}
+
+/* RESPONSIVENESS */
+@media (max-width: 700px) {
+    .about-container {
+        flex-direction: column;
+        /* Stacks the image and text vertically */
+        text-align: center;
+        /* Centers the text */
+    }
+
+    .about-text {
+        margin-top: 20px;
+        
+    }
+    .about-text p{
+        font-size: 20px;
+    }
+}
+
+.products {
+    /* text ko center me laane ke liyee */
+    width: 80%;
+    background-size: cover;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+.products .line {
+    width: 170px;
+    height: 4px;
+    background: #f9a21f;
+    margin: 0px auto 70px;
+    text-align: center;
+}
+
+.products h1 {
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.products p {
+    color: black;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22px;
+    padding: 10px;
+}
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.pic {
+    height: 200px;
+}
+
+.product-col {
+    flex-basis: 31%;
+    background: #c5dee073;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+}
+
+.product-col h2 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+@media(max-width:700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+.services-section {
+    position: relative;
+    min-height: 55vh;
+    background: linear-gradient(to right, #4b8a9624, #83bac5);
+    padding: 60px 8%;
+    color: #fff;
+}
+
+
+.services-container {
+    position: relative;
+    z-index: 2;
+}
+
+/* Heading */
+.services-heading h4 {
+    font-size: 45px;
+    color: #fff;
+    text-align: center;
+}
+
+.services-heading .line {
+    width: 170px;
+    height: 4px;
+    background: #f9a21f;
+    margin: 0px auto 70px;
+    text-align: center;
+}
+
+/* Grid */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* FIXED */
+  gap: 50px 69px;
+  max-width: 1033px;
+  margin: 115px auto 0;
+}
+
+/* Card */
+.service-card {
+    background: #fff;
+    color: #111;
+    border-radius: 18px;
+    padding: 55px 20px 30px;
+    text-align: center;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+.service-card p {
+    margin-top: 15px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #555;
+}
+
+
+
+
+.service-card:hover {
+    transform: translateY(-10px);
+}
+
+/* Red Icon Circle */
+.icon-circle {
+    width: 70px;
+    height: 70px;
+    background: #ff1a1a;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: -35px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.icon-circle i {
+    color: #fff;
+    font-size: 30px;
+}
+
+/* Card Text */
+.service-card h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .services-heading h2 {
+        font-size: 42px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    width: 100%;
+    padding: 60px 0px;
+    text-align: center;
+    background-color:#e8868b;
+}
+.footer-col{
+    max-width: 7xl;
+    margin: auto;
+}
+.footer-div{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    color: white;
+}
+.link-div h3{
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.links-list a{
+    display: block;
+    opacity: 0.9;
+    margin-bottom: 0.5rem;
+    text-decoration: none;
+    color: white;
+}
+.last-footer-div{
+    padding-top: 2rem;
+    text-align: center;
+    opacity: 0.9;
+}
+
