@@ -14,6 +14,11 @@
     background-size: cover;
     position: relative;
 }
+.sub-header {
+    background: url(background.jpg) no-repeat center;
+    background-size: cover;
+    height: 150px;
+}
 
 nav {
     display: flex;
@@ -147,6 +152,11 @@ nav .imgg {
     background-color: white;
     /* Dark background */
     padding: 180px 20px 10px;
+}
+
+
+.about-y{
+    padding: 100px 27px 123px;
 }
 
 .about-container {
