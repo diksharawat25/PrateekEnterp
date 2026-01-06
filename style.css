@@ -118,7 +118,7 @@ nav {
 }
 
 .hero-btn:hover {
-    border: 1px solid #ee7971;
+    border: 3px solid  #f9a21f;
     background: #f8f8f9;
     transition: 2s;
     color: black;
