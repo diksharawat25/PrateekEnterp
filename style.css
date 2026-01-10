@@ -706,6 +706,22 @@ nav {
 }
 
 .shipping-container-products {
-  padding: 20px 90px;
+  padding: 10px 90px 40px 90px;
   text-align: center;
 }
+
+
+.sc-product {
+    border:#000 2px solid;
+    height:350px;
+    width:400px;
+    border-radius:20px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    flex-direction:column;
+}
+
+
+
