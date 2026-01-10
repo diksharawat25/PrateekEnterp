@@ -21,13 +21,13 @@ body {
 .header {
   min-height: 100vh;
   width: 100%;
-  background-image: url(banner111.png);
+  background-image: url('image/Home/homepagebg.png');
   background-position: center;
   background-size: cover;
   position: relative;
 }
 .sub-header {
-  background: url(background.jpg) no-repeat center;
+  background: url('./image/background.jpg') no-repeat center;
   background-size: cover;
   height: 150px;
 }
@@ -675,4 +675,37 @@ nav {
     margin-left: auto;
     margin-right: auto;
   }
+}
+
+
+/* products styling */
+.title-line {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Times New Roman", serif;
+  font-size: 40px;
+  font-weight: 600;
+  color: #192577;
+  letter-spacing: 2px;
+  margin-top: 30px;
+}
+
+.title-line::before,
+.title-line::after {
+  content: "";
+  width: 100px;
+  height: 2px;
+  background-color: #000;
+  margin: 0 15px;  
+}
+
+.title-line strong {
+  font-weight: 800;
+  color: #000;
+}
+
+.shipping-container-products {
+  padding: 20px 90px;
+  text-align: center;
 }
