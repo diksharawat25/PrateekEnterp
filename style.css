@@ -188,6 +188,7 @@ nav {
       ),
       url(banner2.png);
   }
+  
 }
 @media (max-width: 992px) {
   .nav-links ul {
@@ -241,7 +242,7 @@ nav {
 .about {
   background-color: white;
   /* Dark background */
-  padding: 180px 20px 10px;
+  padding: 70px 20px 10px;
 }
 
 .about-y {
