@@ -21,7 +21,7 @@
 
     <section class="header">
         <nav>
-            <a href="index.html"><img class="img" src="image/logo.png"></a>
+            <a href="index.html"><img class="img" src="./image/logo.png"></a>
             <i class="fas fa-bars" id="menu-icon" onclick="showMenu()"></i>
             <div class="nav-links" id="navLinks">
                 <i class="fas fa-times" id="close-icon" onclick="hideMenu()"></i>
@@ -47,7 +47,7 @@
         <div class="about-container">
             <!-- Image Section -->
             <div class="about-image">
-                <img src="image/About/about_img2.jpg" alt="About Us">
+                <img src="./image/About/about_img2.jpg" alt="About Us">
             </div>
 
             <div class="about-text">
@@ -67,27 +67,27 @@
     </section>
 
     <!-- products section -->
-    <section class="products">
+    <section class="products" style="background: #fff;">
         <h1>Our Products</h1>
         <div class="line"></div>
         <div class="row">
 
-            <div class="product-col" onclick="window.location.href='shippingcontainer.html'">
-                <img class="pic" src="image/Products/shipping-container.jpg" alt="Used Shipping Container">
+            <div class="product-col">
+                <img class="pic" src="./image/Products/shipping-container.jpg" alt="Used Shipping Container">
                 <h2>USED SHIPPING CONTAINERS</h2>
                 <p>High-quality 20ft and 40ft used shipping containers suitable for storage, transport, and
                     customization.</p>
             </div>
 
-            <div class="product-col " onclick="window.location.href='officeContainer.html'">
-                <img class="pic" src="image/Products/office-container.jpg" alt="Office Container">
+            <div class="product-col">
+                <img class="pic" src="./image/Products/office-container.jpg" alt="Office Container">
                 <h2>OFFICE CONTAINERS</h2>
                 <p>Fully customized office containers designed from used shipping containers for comfortable workspaces.
                 </p>
             </div>
 
-            <div class="product-col " onclick="window.location.href='securityCabin.html'">
-                <img class="pic" src="image/Products/security-cabin.jpg" alt="Security Cabin">
+            <div class="product-col">
+                <img class="pic" src="./image/Products/security-cabin.jpg" alt="Security Cabin">
                 <h2>SECURITY CABINS & FRP TOILETS</h2>
                 <p>Portable security cabins and FRP toilets built for durability, convenience, and easy installation.
                 </p>
@@ -97,20 +97,20 @@
 
         <div class="row">
 
-            <div class="product-col" onclick=" window.location.href='portaCabin.html'">
-                <img class="pic" src="image/Products/porta-cabin.png" alt="Porta Cabin">
+            <div class="product-col">
+                <img class="pic" src="./image/Products/porta-cabin.png" alt="Porta Cabin">
                 <h2>PORTA CABINS</h2>
                 <p>Quick-to-install porta cabins ideal for site offices, accommodations, and temporary setups.</p>
             </div>
 
-            <div class="product-col" onclick="window.location.href='msStructure.html'">
-                <img class="pic" src="image/Products/ms-structure.jpg" alt="MS Structure">
+            <div class="product-col">
+                <img class="pic" src="./image/Products/ms-structure.jpg" alt="MS Structure">
                 <h2>MS STRUCTURE & MEZZANINE FLOOR</h2>
                 <p>Strong and reliable MS structures and mezzanine floors for industrial and commercial use.</p>
             </div>
 
-            <div class="product-col" onclick="window.location.href='pufPanels.html'">
-                <img class="pic" src="image/Products/puf-panels.jpeg" alt="PUF Panels">
+            <div class="product-col">
+                <img class="pic" src="./image/Products/puf-panels.jpeg" alt="PUF Panels">
                 <h2>PUF PANELS</h2>
                 <p>High-performance PUF panels offering excellent thermal insulation for industrial applications.</p>
             </div>
@@ -180,8 +180,8 @@
             <div class="contact-map">
                 <iframe
                     src="https://www.google.com/maps?q=428%2C%204th%20Floor%2C%20Orbit%20Plaza%2C%20Crossing%20Republik%2C%20Ghaziabad%2C%20Uttar%20Pradesh%20201016&output=embed"
-                    width="100%" height="100%" style="border:0;" allowfullscreen=""
-                    referrerpolicy="no-referrer-when-downgrade" loading="">
+                    width="100%" height="100%" style="border:0;" allowfullscreen loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
 
             </div>
@@ -246,15 +246,17 @@
         </div>
     </footer>
     <script>
-        var navLinks = document.getElementById("navLinks");
+        const navLinks = document.getElementById("navLinks");
 
         function showMenu() {
             navLinks.style.right = "0";
         }
+
         function hideMenu() {
-            navLinks.style.right = "-200px";
+            navLinks.style.right = "-100%";
         }
     </script>
+
 </body>
 
 </html>
