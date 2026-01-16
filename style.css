@@ -100,9 +100,10 @@ nav {
 }
 
 .text-box h1 {
-  font-size: 40px;
-  color: hwb(18.28deg 0% 43.46%);
+  font-size: 50px;
+  color:  #ff1a1a;
   text-shadow: #203749;
+  font-weight: 800;
 }
 
 .text-box h3 {
@@ -110,7 +111,7 @@ nav {
   font-size: 20px;
   color: black;
   text-shadow: 0 5px 10px rgb(0, 0, 0);
-  font-weight: 500;
+  font-weight: bold;
 }
 
 .hero-btn {
@@ -621,7 +622,9 @@ nav {
   padding: 55px 20px 30px;
   text-align: center;
   position: relative;
-  transition: 0.3s ease;
+  cursor: pointer;
+  transition: all 0.35s ease;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 }
 
 .service-card p {
@@ -632,7 +635,8 @@ nav {
 }
 
 .service-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-12px);
+  box-shadow: 0 28px 60px rgba(0, 0, 0, 0.18);
 }
 
 .icon-circle {
