@@ -14,12 +14,14 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
     <section class="sub-header">
         <nav>
             <a href="index.html"><img class="img" src="image/logo.png"></a>
-
+            <i class="fas fa-bars" id="menu-icon" onclick="showMenu()"></i>
             <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" id="close-icon" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
@@ -33,24 +35,29 @@
     <section class="outside-container">
         <div class="container-wrapper">
             <div class="image">
-                <img src="image/Products/shipping-container.jpg" />
+                <img src="image/Products/ms-structure.jpg" />
             </div>
             <div class="description">
-                <h1>Shipping Containers</h1>
-                <p class="desc">Durable, Cost-effective, and suitable for storage, transportation, and multiple customization purposes.</p>
+                <h1>MS Structure</h1>
+
+                <p class="desc">
+                    Strong, durable, and cost-effective MS structures designed for industrial,
+                    commercial, and warehouse applications. 
+                </p>
 
                 <h4>Specifications</h4>
                 <ul>
-                  <li>Sizes: 20ft & 40ft</li>
-                  <li>Condition: Cargo-worthy / Wind & Water Tight</li>
-                  <li>Material: Corten Steel</li>
-                  <li>Floor: Marine Plywood</li>
+                    <li>Material: Mild Steel (MS)</li>
+                    <li>Structure Type: Prefabricated / Custom Fabricated</li>
+                    <li>Finish: Primer Coated / Painted / Hot Dip Galvanized</li>
+                    <li>Design Load: As per industrial standards</li>
+                    <li>Fabrication: Welding & Bolted Connections</li>
                 </ul>
 
                 <h4>Price</h4>
                 <p>
-                  20ft - Starting from ₹1,25,000* <br>
-                  40ft - Starting from ₹2,10,000*
+                    Price varies based on design, size, load capacity, and material specification.<br>
+                    <strong>Starting from ₹180 per sq. ft.*</strong>
                 </p>
 
                 <button class="btn">Enquire Now</button>
@@ -58,5 +65,17 @@
             </div>
         </div>
     </section>
+    <script>
+        const navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-100%";
+        }
+    </script>
 </body>
+
 </html>

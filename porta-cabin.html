@@ -14,12 +14,14 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
 <body>
     <section class="sub-header">
         <nav>
             <a href="index.html"><img class="img" src="image/logo.png"></a>
-
+            <i class="fas fa-bars" id="menu-icon" onclick="showMenu()"></i>
             <div class="nav-links" id="navLinks">
+                <i class="fas fa-times" id="close-icon" onclick="hideMenu()"></i>
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
@@ -33,30 +35,48 @@
     <section class="outside-container">
         <div class="container-wrapper">
             <div class="image">
-                <img src="image/Products/shipping-container.jpg" />
+                <img src="image/Products/porta-cabin.png" />
             </div>
             <div class="description">
-                <h1>Shipping Containers</h1>
-                <p class="desc">Durable, Cost-effective, and suitable for storage, transportation, and multiple customization purposes.</p>
+                <h1>Porta Cabin</h1>
+
+                <p class="desc">
+                    High-quality porta cabins designed for quick installation, mobility,
+                    and long-term use.
+                </p>
 
                 <h4>Specifications</h4>
                 <ul>
-                  <li>Sizes: 20ft & 40ft</li>
-                  <li>Condition: Cargo-worthy / Wind & Water Tight</li>
-                  <li>Material: Corten Steel</li>
-                  <li>Floor: Marine Plywood</li>
+                    <li>Structure Type: PPGI / MS Frame Porta Cabin</li>
+                    <li>Panel Type: PUF Panels / Cement Board / Aercon Panels</li>
+                    <li>Insulation: PUF / Glass Wool (Optional)</li>
+                    <li>Flooring: PVC / Cement Board / Anti-skid Flooring</li>
+                    <li>Electrical: Complete wiring with lights & switches</li>
+                    <li>Doors & Windows: Aluminum / UPVC as per requirement</li>
                 </ul>
 
                 <h4>Price</h4>
                 <p>
-                  20ft - Starting from ₹1,25,000* <br>
-                  40ft - Starting from ₹2,10,000*
+                    Porta Cabin – <strong>Starting from ₹1,600 per sq. ft.*</strong>
                 </p>
 
                 <button class="btn">Enquire Now</button>
 
+
             </div>
         </div>
     </section>
+    <script>
+        const navLinks = document.getElementById("navLinks");
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-100%";
+        }
+    </script>
 </body>
+
 </html>
