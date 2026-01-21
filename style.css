@@ -1399,7 +1399,6 @@ nav {
   padding: 2% 6%;
   justify-content: space-between;
   align-items: center;
-  height: 160px;
   flex-wrap: wrap;
   height: auto;
 }
@@ -1484,7 +1483,7 @@ nav {
 
 @media (max-width: 576px) {
   .other-category .row {
-    padding: 6% 4%;
+    padding: 10px 50px 10px 10px;
   }
 
   .other-category .row ul li {
